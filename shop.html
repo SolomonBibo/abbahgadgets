@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abbah Gadgets Store</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-c3wMPtLoYkMhLJsyR5R9EjqoGy0e70+iOSNUmPyE6x/TGm0ZU6C/Hca6M9o6rNRCC6dngyFg2DVo5AZHnt1aJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<!-- partial:index.partial.html -->
+
+<header>
+  <div class="nav-wrapper">
+      <div class="logo-container">
+          <img class="logo" src="images/IMG-20230227-WA0011.jpg" alt="Logo">
+      </div>
+      <nav>
+          <input class="hidden" type="checkbox" id="menuToggle">
+          <label class="menu-btn" for="menuToggle">
+              <div class="menu"></div>
+              <div class="menu"></div>
+              <div class="menu"></div>
+          </label>
+          <div class="nav-container">
+              <ul class="nav-tabs">
+                <li class="nav-tab"><a href="./index.html">Home</a></li>
+                <li class="nav-tab"><a href="./shop.html">Shop</a></li>
+                <li class="nav-tab"><a href="tel:+256759740405">Contact Us</a></li>
+              
+                  
+              </ul>
+          </div>
+      </nav>
+
+     
+      
+  </div>
+
+  
+      
+</header>
+
+   <body>
+
+    <div class="banner">
+      <div class="banner-text">
+        <h2>Want to order now?</h2>
+        <p>Call us at <a href="tel:+256759740405">+(256) 759-740-405</a></p>
+      </div>
+      <div class="banner-icon">
+        <i class="fa fa-phone"></i>
+      </div>
+    </div>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var banner = document.querySelector('.banner');
+      var sticky = banner.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          banner.classList.add("sticky")
+        } else {
+          banner.classList.remove("sticky");
+        }
+      }
+      </script>
+   
+    <div class="image-slider">
+      <img src="images/z1.jpg" alt="Image 1">
+      <img src="images/z2.jpg" alt="Image 2">
+      <img src="images/z3.jpg" alt="Image 3">
+      <img src="images/z4.jpg" alt="Image 3">
+      <img src="images/z5.jpg" alt="Image 3">
+      <img src="images/z6.jpg" alt="Image 3">
+      <img src="images/z7.jpg" alt="Image 3">
+      <img src="images/z8.jpg" alt="Image 3">
+      <img src="images/z9.jpg" alt="Image 3">
+    </div>
+
+   <section class="topbody">
+      <div class="news-heading">
+       <p >Talk to Us</p>
+      <h2 id="phone">We allow Swapping and Top Ups...</h2>       
+       </div>
+    
+    </div>
+
+    <div class="saticifaction">
+        <div class="all">
+          <div>
+            <img href="shop.html" src="images/iphone co.jpg" alt="">
+            <a href="#phone" id="phones-link">Phones</a>
+          </div>
+          <div>
+            <img src="images/ipad-mini.jpg" alt="">
+            <a href="#phone" id="tablets-link">Tablets</a>
+          </div>
+          <div>
+            <img src="images/charger.jpg" alt="">
+            <a href="#phone" id="accessories-link">Accessories</a>
+          </div>
+          <div>
+            <img src="images/tv.webp" alt="">
+            <a href="#phone" id="televisions-link">Televisions</a>
+          </div>
+          <div >
+            <img src="images/sound.webp" alt="">
+            <a href="#phone" id="sound-link">Sound</a>
+          </div>
+        </div>
+     </div>
+    
+       <div class="search-bar">
+        <form>
+          <input id="search-bar" type="text" placeholder="Search Phones,tablets,Televisions...">
+          <button id="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+ 
+
+     <div class="news-heading">
+     
+      <h2>PHONE CATEGORIES</h2>
+    
+</div>
+     <section class="phone-section">
+      <div class="phone-card"> 
+        <a href="#phone" id="uk-used-link">UK Used</a>
+      </div>
+ 
+      <div class="phone-card">
+        <a href="#phone" id="brand-new-link">Brand New</a>
+      </div>
+    </section>
+  
+  </section>
+  <!--
+     <div class="loader-container">
+        <div class="loader"></div>
+      </div>-->
+
+            <div class="products">
+      <div id="products-list"></div>
+      </div>
+          <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="modalImg">
+            </div>
+            
+      </div>
+  </form>
+</div>
+</section>
+<footer>
+  <div class="footer-container container">
+      <div class="content_1">
+          <img src="images/logo.png" alt="logo">
+          <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+          <hr>
+          <div class="content1">
+         
+      </div>
+      
+          </div>
+      <div class="content_2">
+          <h4>PHONES</h4>
+          <a>Iphones</a>
+          <a>Samsung</a>
+          <a>Tecnos</a>
+          <a>Oppos</a>
+          <hr>
+      </div>
+      <div class="content_3">
+          <h4>MODES OF SERVICE </h4>
+         
+          <a >We Deliver</a>
+          <a >Swapping Allowed</a>
+          <a >Top Ups Allowed</a>
+          <a >10 Days Guarantee</a>
+          <a href="mgmt.html" target="_blank">MGMT</a>
+          <hr>
+      </div>
+      <div style="display: flex; " class="home_social_icons">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-pinterest'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+      </div>
+  </div>
+  </div>
+</footer>             
+</body>
+</html>      
+ 
+          <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+          <script type="module" src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+          <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+            import { getDatabase, ref, get, child } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js";
+      
+            const firebaseConfig = {
+                apiKey: "AIzaSyCi_hufIZTzsYtdPGQtvtmKmAkkrydmn_A",
+    authDomain: "abbah-83a7b.firebaseapp.com",
+    databaseURL:'https://abbah-83a7b-default-rtdb.firebaseio.com/',
+    projectId: "abbah-83a7b",
+    storageBucket: "abbah-83a7b.appspot.com",
+    messagingSenderId: "379729759051",
+    appId: "1:379729759051:web:e75528d61b02d1e4f536ce",
+    measurementId: "G-H41J2WMR6S"
+            };
+
+          
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const newPhonesRef = ref(database, "products/newphones");
+const ukUsedRef = ref(database, "products/ukused");
+const tvsRef = ref(database, "products/tvs");
+const tabletsRef = ref(database, "products/tablets");
+const accessoriesRef = ref(database, "products/accessories");
+const soundRef = ref(database, "products/sound");
+
+
+const searchBtn = document.getElementById("search-btn");
+
+searchBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+  searchProducts();
+
+
+
+
+function searchProducts() {
+  const query = document.getElementById("search-bar").value.toLowerCase();
+  
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Search for query in each relevant firebase node
+  // Here's an example for newPhonesRef
+  get(newPhonesRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      const name = product.name.toLowerCase();
+      if (name.includes(query)) {
+        // Create a card for the matching product
+        const card = document.createElement("div");
+        card.classList.add("card1");
+        // Add "Brand New" badge
+        const badge = document.createElement("div");
+        badge.classList.add("used-badge2");
+        badge.innerText = "Brand New";
+        card.appendChild(badge);
+        // Add product image
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.classList.add("product-img");
+        img.addEventListener("click", () => {
+          const modal = document.querySelector(".modal");
+          const modalImg = document.querySelector("#modalImg");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+        card.appendChild(img);
+        // Add product name
+        const title = document.createElement("h2");
+        title.innerText = product.name;
+        card.appendChild(title);
+        // Add product description
+        const desc = document.createElement("p");
+        desc.innerText = product.description;
+        card.appendChild(desc);
+        // Add product price
+        const price = document.createElement("p");
+        price.innerText = `Price: UGX ${product.price}`;
+        card.appendChild(price);
+        // Add star rating
+        const stars = document.createElement("div");
+        stars.classList.add("stars");
+        for (let j = 0; j < 5; j++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "&#9733;"; // Unicode character for a star
+          stars.appendChild(star);
+        }
+        card.appendChild(stars);
+        // Add free delivery text
+        const deliveryText = document.createElement("div");
+        deliveryText.textContent = "Eligible for Free Delivery";
+        deliveryText.classList.add("delivery-text");
+        card.appendChild(deliveryText);
+        // Add message input field
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+        card.appendChild(messageInput);
+        // Add send button
+        const sendBtn = document.createElement("button");
+        sendBtn.innerText = "Send";
+        sendBtn.addEventListener("click", () => {
+          const message = messageInput.value;
+          console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank');
+        });
+        card.appendChild(sendBtn);
+        // Add card to list
+        productsList.appendChild(card);
+      }
+    }
+  });
+
+
+
+
+  // Here's an example for newPhonesRef
+  get(ukUsedRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      const name = product.name.toLowerCase();
+      if (name.includes(query)) {
+        // Create a card for the matching product
+        const card = document.createElement("div");
+        card.classList.add("card1");
+        // Add "Brand New" badge
+        const badge = document.createElement("div");
+        badge.classList.add("used-badge");
+        badge.innerText = "UK Used";
+        card.appendChild(badge);
+        // Add product image
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.classList.add("product-img");
+        img.addEventListener("click", () => {
+          const modal = document.querySelector(".modal");
+          const modalImg = document.querySelector("#modalImg");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+        card.appendChild(img);
+        // Add product name
+        const title = document.createElement("h2");
+        title.innerText = product.name;
+        card.appendChild(title);
+        // Add product description
+        const desc = document.createElement("p");
+        desc.innerText = product.description;
+        card.appendChild(desc);
+        // Add product price
+        const price = document.createElement("p");
+        price.innerText = `Price: UGX ${product.price}`;
+        card.appendChild(price);
+        // Add star rating
+        const stars = document.createElement("div");
+        stars.classList.add("stars");
+        for (let j = 0; j < 5; j++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "&#9733;"; // Unicode character for a star
+          stars.appendChild(star);
+        }
+        card.appendChild(stars);
+        // Add free delivery text
+        const deliveryText = document.createElement("div");
+        deliveryText.textContent = "Eligible for Free Delivery";
+        deliveryText.classList.add("delivery-text");
+        card.appendChild(deliveryText);
+        // Add message input field
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+        card.appendChild(messageInput);
+        // Add send button
+        const sendBtn = document.createElement("button");
+        sendBtn.innerText = "Send";
+        sendBtn.addEventListener("click", () => {
+          const message = messageInput.value;
+          console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank');
+        });
+        card.appendChild(sendBtn);
+        // Add card to list
+        productsList.appendChild(card);
+      }
+    }
+  });
+
+
+
+  // Here's an example for newPhonesRef
+  get(soundRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      const name = product.name.toLowerCase();
+      if (name.includes(query)) {
+        // Create a card for the matching product
+        const card = document.createElement("div");
+        card.classList.add("card1");
+        // Add "Brand New" badge
+        const badge = document.createElement("div");
+        badge.classList.add("used-badge2");
+        badge.innerText = "Brand New";
+        card.appendChild(badge);
+        // Add product image
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.classList.add("product-img");
+        img.addEventListener("click", () => {
+          const modal = document.querySelector(".modal");
+          const modalImg = document.querySelector("#modalImg");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+        card.appendChild(img);
+        // Add product name
+        const title = document.createElement("h2");
+        title.innerText = product.name;
+        card.appendChild(title);
+        // Add product description
+        const desc = document.createElement("p");
+        desc.innerText = product.description;
+        card.appendChild(desc);
+        // Add product price
+        const price = document.createElement("p");
+        price.innerText = `Price: UGX ${product.price}`;
+        card.appendChild(price);
+        // Add star rating
+        const stars = document.createElement("div");
+        stars.classList.add("stars");
+        for (let j = 0; j < 5; j++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "&#9733;"; // Unicode character for a star
+          stars.appendChild(star);
+        }
+        card.appendChild(stars);
+        // Add free delivery text
+        const deliveryText = document.createElement("div");
+        deliveryText.textContent = "Eligible for Free Delivery";
+        deliveryText.classList.add("delivery-text");
+        card.appendChild(deliveryText);
+        // Add message input field
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+        card.appendChild(messageInput);
+        // Add send button
+        const sendBtn = document.createElement("button");
+        sendBtn.innerText = "Send";
+        sendBtn.addEventListener("click", () => {
+          const message = messageInput.value;
+          console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank');
+        });
+        card.appendChild(sendBtn);
+        // Add card to list
+        productsList.appendChild(card);
+      }
+    }
+  });
+
+
+
+  // Here's an example for newPhonesRef
+  get(accessoriesRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      const name = product.name.toLowerCase();
+      if (name.includes(query)) {
+        // Create a card for the matching product
+        const card = document.createElement("div");
+        card.classList.add("card1");
+        // Add "Brand New" badge
+        const badge = document.createElement("div");
+        badge.classList.add("used-badge2");
+        badge.innerText = "Brand New";
+        card.appendChild(badge);
+        // Add product image
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.classList.add("product-img");
+        img.addEventListener("click", () => {
+          const modal = document.querySelector(".modal");
+          const modalImg = document.querySelector("#modalImg");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+        card.appendChild(img);
+        // Add product name
+        const title = document.createElement("h2");
+        title.innerText = product.name;
+        card.appendChild(title);
+        // Add product description
+        const desc = document.createElement("p");
+        desc.innerText = product.description;
+        card.appendChild(desc);
+        // Add product price
+        const price = document.createElement("p");
+        price.innerText = `Price: UGX ${product.price}`;
+        card.appendChild(price);
+        // Add star rating
+        const stars = document.createElement("div");
+        stars.classList.add("stars");
+        for (let j = 0; j < 5; j++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "&#9733;"; // Unicode character for a star
+          stars.appendChild(star);
+        }
+        card.appendChild(stars);
+        // Add free delivery text
+        const deliveryText = document.createElement("div");
+        deliveryText.textContent = "Eligible for Free Delivery";
+        deliveryText.classList.add("delivery-text");
+        card.appendChild(deliveryText);
+        // Add message input field
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+        card.appendChild(messageInput);
+        // Add send button
+        const sendBtn = document.createElement("button");
+        sendBtn.innerText = "Send";
+        sendBtn.addEventListener("click", () => {
+          const message = messageInput.value;
+          console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank');
+        });
+        card.appendChild(sendBtn);
+        // Add card to list
+        productsList.appendChild(card);
+      }
+    }
+  });
+
+
+
+
+  // Here's an example for newPhonesRef
+  get(tabletsRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      const name = product.name.toLowerCase();
+      if (name.includes(query)) {
+        // Create a card for the matching product
+        const card = document.createElement("div");
+        card.classList.add("card1");
+        // Add "Brand New" badge
+        const badge = document.createElement("div");
+        badge.classList.add("used-badge2");
+        badge.innerText = "Brand New";
+        card.appendChild(badge);
+        // Add product image
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.classList.add("product-img");
+        img.addEventListener("click", () => {
+          const modal = document.querySelector(".modal");
+          const modalImg = document.querySelector("#modalImg");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+        card.appendChild(img);
+        // Add product name
+        const title = document.createElement("h2");
+        title.innerText = product.name;
+        card.appendChild(title);
+        // Add product description
+        const desc = document.createElement("p");
+        desc.innerText = product.description;
+        card.appendChild(desc);
+        // Add product price
+        const price = document.createElement("p");
+        price.innerText = `Price: UGX ${product.price}`;
+        card.appendChild(price);
+        // Add star rating
+        const stars = document.createElement("div");
+        stars.classList.add("stars");
+        for (let j = 0; j < 5; j++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "&#9733;"; // Unicode character for a star
+          stars.appendChild(star);
+        }
+        card.appendChild(stars);
+        // Add free delivery text
+        const deliveryText = document.createElement("div");
+        deliveryText.textContent = "Eligible for Free Delivery";
+        deliveryText.classList.add("delivery-text");
+        card.appendChild(deliveryText);
+        // Add message input field
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+        card.appendChild(messageInput);
+        // Add send button
+        const sendBtn = document.createElement("button");
+        sendBtn.innerText = "Send";
+        sendBtn.addEventListener("click", () => {
+          const message = messageInput.value;
+          console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank');
+        });
+        card.appendChild(sendBtn);
+        // Add card to list
+        productsList.appendChild(card);
+      }
+    }
+  });
+
+
+
+
+  // Here's an example for newPhonesRef
+  get(tvsRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      const name = product.name.toLowerCase();
+      if (name.includes(query)) {
+        // Create a card for the matching product
+        const card = document.createElement("div");
+        card.classList.add("card1");
+        // Add "Brand New" badge
+        const badge = document.createElement("div");
+        badge.classList.add("used-badge2");
+        badge.innerText = "Brand New";
+        card.appendChild(badge);
+        // Add product image
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.classList.add("product-img");
+        img.addEventListener("click", () => {
+          const modal = document.querySelector(".modal");
+          const modalImg = document.querySelector("#modalImg");
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+        card.appendChild(img);
+        // Add product name
+        const title = document.createElement("h2");
+        title.innerText = product.name;
+        card.appendChild(title);
+        // Add product description
+        const desc = document.createElement("p");
+        desc.innerText = product.description;
+        card.appendChild(desc);
+        // Add product price
+        const price = document.createElement("p");
+        price.innerText = `Price: UGX ${product.price}`;
+        card.appendChild(price);
+        // Add star rating
+        const stars = document.createElement("div");
+        stars.classList.add("stars");
+        for (let j = 0; j < 5; j++) {
+          const star = document.createElement("span");
+          star.classList.add("star");
+          star.innerHTML = "&#9733;"; // Unicode character for a star
+          stars.appendChild(star);
+        }
+        card.appendChild(stars);
+        // Add free delivery text
+        const deliveryText = document.createElement("div");
+        deliveryText.textContent = "Eligible for Free Delivery";
+        deliveryText.classList.add("delivery-text");
+        card.appendChild(deliveryText);
+        // Add message input field
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+        card.appendChild(messageInput);
+        // Add send button
+        const sendBtn = document.createElement("button");
+        sendBtn.innerText = "Send";
+        sendBtn.addEventListener("click", () => {
+          const message = messageInput.value;
+          console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+          window.open(whatsappUrl, '_blank');
+        });
+        card.appendChild(sendBtn);
+        // Add card to list
+        productsList.appendChild(card);
+      }
+    }
+  });
+
+
+  
+}
+
+});
+
+//button for brand new//
+
+
+
+document.querySelector("#brand-new-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(newPhonesRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+
+//button for used //
+
+
+
+document.querySelector("#uk-used-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(newPhonesRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge");
+      badge.innerText = "UK Used";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+//Phones//
+
+
+
+
+document.querySelector("#phones-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(newPhonesRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+
+
+
+   // Get products from newPhonesRef
+   get(ukUsedRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+
+
+
+//tevevisions navigation//
+
+
+
+
+document.querySelector("#televisions-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(tvsRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+
+
+//sound navigation//
+
+
+
+document.querySelector("#sound-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(soundRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+
+//accessories Navigation//
+
+
+
+
+document.querySelector("#accessories-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(accessoriesRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+
+
+//tablets Navigation//
+
+
+
+document.querySelector("#tablets-link").addEventListener("click", () => {
+  // Clear the products list
+  document.getElementById("products-list").innerHTML = "";
+  // Get products from newPhonesRef
+  get(tabletsRef).then((snapshot) => {
+    const data = snapshot.val();
+    const productsList = document.getElementById("products-list");
+    for (let i in data) {
+      const product = data[i];
+      // Create a card for the product
+      const card = document.createElement("div");
+      card.classList.add("card1");
+      // Add "Brand New" badge
+      const badge = document.createElement("div");
+      badge.classList.add("used-badge2");
+      badge.innerText = "Brand New";
+      card.appendChild(badge);
+      // Add product image
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      // Add product name
+      const title = document.createElement("h2");
+      title.innerText = product.name;
+      card.appendChild(title);
+      // Add product description
+      const desc = document.createElement("p");
+      desc.innerText = product.description;
+      card.appendChild(desc);
+      // Add product price
+      const price = document.createElement("p");
+      price.innerText = `Price: UGX ${product.price}`;
+      card.appendChild(price);
+      // Add star rating
+      const stars = document.createElement("div");
+      stars.classList.add("stars");
+      for (let j = 0; j < 5; j++) {
+        const star = document.createElement("span");
+        star.classList.add("star");
+        star.innerHTML = "&#9733;"; // Unicode character for a star
+        stars.appendChild(star);
+      }
+      card.appendChild(stars);
+      // Add free delivery text
+      const deliveryText = document.createElement("div");
+      deliveryText.textContent = "Eligible for Free Delivery";
+      deliveryText.classList.add("delivery-text");
+      card.appendChild(deliveryText);
+      // Add message input field
+      const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      // Add send button
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      // Add card to list
+      productsList.appendChild(card);
+    }
+  });
+});
+
+
+
+           const loaderContainer = document.querySelector('.loader-container');
+         //   const loader = document.querySelector('.loader');
+            const productsList = document.getElementById("products-list");
+            const modal = document.querySelector('.modal');
+            const modalImg = document.getElementById("modalImg");
+            const closeBtn = document.querySelector('.close');
+      
+      
+          //  loaderContainer.style.display = "flex"; // show the loader
+
+
+            get(newPhonesRef).then((snapshot) => {
+              const data = snapshot.val();
+              const productsList = document.getElementById("products-list");
+              for (let i in data) {
+                const product = data[i];
+                const card = document.createElement("div");
+                card.classList.add("card1");
+                       // Add "used" badge
+  const usedBadge = document.createElement("div");
+  usedBadge.classList.add("used-badge2");
+  usedBadge.innerText = "Brand New";
+  card.appendChild(usedBadge);
+                   const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      
+      const modal = document.querySelector(".modal");
+      const closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+          
+ 
+
+                const title = document.createElement("h2");
+                title.innerText = product.name;
+                card.appendChild(title);
+      
+                const desc = document.createElement("p");
+                desc.innerText = product.description;
+                card.appendChild(desc);
+      
+
+      
+                const price = document.createElement("p");
+                price.innerText = `Price: UGX${product.price}`;
+                card.appendChild(price);
+      
+
+                const stars = document.createElement("div");            
+stars.classList.add("stars");
+for (let j = 0; j < 5; j++) {
+  const star = document.createElement("span");
+  star.classList.add("star");
+  star.innerHTML = "&#9733;"; // Unicode character for a star
+  stars.appendChild(star);
+}
+card.appendChild(stars);
+
+
+const deliveryText = document.createElement("div");
+deliveryText.textContent = "Eligible for Free Delivery";
+deliveryText.classList.add("delivery-text");
+card.appendChild(deliveryText);
+
+
+
+      
+      
+      // Open the Modal
+      function openModal(img) {
+        document.getElementById("modalImg").src = img.src;
+        document.querySelector(".modal").style.display = "block";
+      }
+      
+      // Close the Modal
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".modal").style.display = "none";
+      });
+      
+      
+      
+                const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      
+      productsList.appendChild(card);
+      
+      }
+        loaderContainer.style.display = "none"; // hide the loader container
+        
+    });
+   
+
+
+
+
+//UK USed  //
+
+    get(ukUsedRef).then((snapshot) => {
+              const data = snapshot.val();
+              const productsList = document.getElementById("products-list");
+              for (let i in data) {
+                const product = data[i];
+                const card = document.createElement("div");
+                card.classList.add("card1");
+
+
+                  // Add "used" badge
+  const usedBadge = document.createElement("div");
+  usedBadge.classList.add("used-badge");
+  usedBadge.innerText = "UK Used";
+  card.appendChild(usedBadge);
+      
+                   const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      
+      const modal = document.querySelector(".modal");
+      const closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+          
+ 
+
+                const title = document.createElement("h2");
+                title.innerText = product.name;
+                card.appendChild(title);
+      
+
+
+
+                const desc = document.createElement("p");
+                desc.innerText = product.description;
+                card.appendChild(desc);
+      
+     
+      
+      
+                const price = document.createElement("p");
+                price.innerText = `Price: UGX${product.price}`;
+                card.appendChild(price);
+      
+
+                const stars = document.createElement("div");            
+stars.classList.add("stars");
+for (let j = 0; j < 5; j++) {
+  const star = document.createElement("span");
+  star.classList.add("star");
+  star.innerHTML = "&#9733;"; // Unicode character for a star
+  stars.appendChild(star);
+}
+card.appendChild(stars);
+
+
+const deliveryText = document.createElement("div");
+deliveryText.textContent = "Eligible for Free Delivery";
+deliveryText.classList.add("delivery-text");
+card.appendChild(deliveryText);
+
+
+
+
+      
+      
+      // Open the Modal
+      function openModal(img) {
+        document.getElementById("modalImg").src = img.src;
+        document.querySelector(".modal").style.display = "block";
+      }
+      
+      // Close the Modal
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".modal").style.display = "none";
+      });
+      
+      
+      
+                const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      
+      productsList.appendChild(card);
+      
+      }
+        loaderContainer.style.display = "none"; // hide the loader container
+        
+    });
+   
+
+
+
+
+    //Sound//
+
+
+    get(soundRef).then((snapshot) => {
+              const data = snapshot.val();
+              const productsList = document.getElementById("products-list");
+              for (let i in data) {
+                const product = data[i];
+                const card = document.createElement("div");
+                card.classList.add("card1");
+      
+                   const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      
+      const modal = document.querySelector(".modal");
+      const closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+          
+ 
+
+                const title = document.createElement("h2");
+                title.innerText = product.name;
+                card.appendChild(title);
+      
+                const desc = document.createElement("p");
+                desc.innerText = product.description;
+                card.appendChild(desc);
+      
+      
+      
+                const price = document.createElement("p");
+                price.innerText = `Price: UGX${product.price}`;
+                card.appendChild(price);
+      
+
+                const stars = document.createElement("div");            
+stars.classList.add("stars");
+for (let j = 0; j < 5; j++) {
+  const star = document.createElement("span");
+  star.classList.add("star");
+  star.innerHTML = "&#9733;"; // Unicode character for a star
+  stars.appendChild(star);
+}
+card.appendChild(stars);
+
+
+const deliveryText = document.createElement("div");
+deliveryText.textContent = "Eligible for Free Delivery";
+deliveryText.classList.add("delivery-text");
+card.appendChild(deliveryText);
+
+
+
+      
+      
+      // Open the Modal
+      function openModal(img) {
+        document.getElementById("modalImg").src = img.src;
+        document.querySelector(".modal").style.display = "block";
+      }
+      
+      // Close the Modal
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".modal").style.display = "none";
+      });
+      
+      
+      
+                const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      
+      productsList.appendChild(card);
+      
+      }
+        loaderContainer.style.display = "none"; // hide the loader container
+        
+    });
+   
+
+
+    //tablets//
+
+
+    get(tabletsRef).then((snapshot) => {
+              const data = snapshot.val();
+              const productsList = document.getElementById("products-list");
+              for (let i in data) {
+                const product = data[i];
+                const card = document.createElement("div");
+                card.classList.add("card1");
+      
+                   const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      
+      const modal = document.querySelector(".modal");
+      const closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+          
+ 
+
+                const title = document.createElement("h2");
+                title.innerText = product.name;
+                card.appendChild(title);
+      
+                const desc = document.createElement("p");
+                desc.innerText = product.description;
+                card.appendChild(desc);
+      
+      
+      
+      
+                const price = document.createElement("p");
+                price.innerText = `Price: UGX${product.price}`;
+                card.appendChild(price);
+      
+
+                const stars = document.createElement("div");            
+stars.classList.add("stars");
+for (let j = 0; j < 5; j++) {
+  const star = document.createElement("span");
+  star.classList.add("star");
+  star.innerHTML = "&#9733;"; // Unicode character for a star
+  stars.appendChild(star);
+}
+card.appendChild(stars);
+
+
+const deliveryText = document.createElement("div");
+deliveryText.textContent = "Eligible for Free Delivery";
+deliveryText.classList.add("delivery-text");
+card.appendChild(deliveryText);
+
+
+
+      
+      
+      // Open the Modal
+      function openModal(img) {
+        document.getElementById("modalImg").src = img.src;
+        document.querySelector(".modal").style.display = "block";
+      }
+      
+      // Close the Modal
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".modal").style.display = "none";
+      });
+      
+      
+      
+                const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      
+      productsList.appendChild(card);
+      
+      }
+        loaderContainer.style.display = "none"; // hide the loader container
+        
+    });
+   
+
+
+
+    //accessories//
+
+
+    get(accessoriesRef).then((snapshot) => {
+              const data = snapshot.val();
+              const productsList = document.getElementById("products-list");
+              for (let i in data) {
+                const product = data[i];
+                const card = document.createElement("div");
+                card.classList.add("card1");
+      
+                   const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      
+      const modal = document.querySelector(".modal");
+      const closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+          
+ 
+
+                const title = document.createElement("h2");
+                title.innerText = product.name;
+                card.appendChild(title);
+      
+                const desc = document.createElement("p");
+                desc.innerText = product.description;
+                card.appendChild(desc);
+      
+     
+      
+      
+                const price = document.createElement("p");
+                price.innerText = `Price: UGX${product.price}`;
+                card.appendChild(price);
+      
+
+                const stars = document.createElement("div");            
+stars.classList.add("stars");
+for (let j = 0; j < 5; j++) {
+  const star = document.createElement("span");
+  star.classList.add("star");
+  star.innerHTML = "&#9733;"; // Unicode character for a star
+  stars.appendChild(star);
+}
+card.appendChild(stars);
+
+
+const deliveryText = document.createElement("div");
+deliveryText.textContent = "Eligible for Free Delivery";
+deliveryText.classList.add("delivery-text");
+card.appendChild(deliveryText);
+
+
+
+      
+      
+      // Open the Modal
+      function openModal(img) {
+        document.getElementById("modalImg").src = img.src;
+        document.querySelector(".modal").style.display = "block";
+      }
+      
+      // Close the Modal
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".modal").style.display = "none";
+      });
+      
+      
+      
+                const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      
+      productsList.appendChild(card);
+      
+      }
+        loaderContainer.style.display = "none"; // hide the loader container
+        
+    });
+   
+
+//tvs//
+
+
+get(tvsRef).then((snapshot) => {
+              const data = snapshot.val();
+              const productsList = document.getElementById("products-list");
+              for (let i in data) {
+                const product = data[i];
+                const card = document.createElement("div");
+                card.classList.add("card1");
+      
+                   const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.name;
+      img.classList.add("product-img");
+      img.addEventListener("click", () => {
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector("#modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+      card.appendChild(img);
+      
+      const modal = document.querySelector(".modal");
+      const closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+          
+ 
+
+                const title = document.createElement("h2");
+                title.innerText = product.name;
+                card.appendChild(title);
+      
+                const desc = document.createElement("p");
+                desc.innerText = product.description;
+                card.appendChild(desc);
+      
+      if (desc.offsetHeight > 200) { 
+        const showMoreBtn = document.createElement("button");
+        showMoreBtn.innerText = "Read More";
+        card.appendChild(showMoreBtn);
+      
+        const hideDesc = () => {
+          desc.style.maxHeight = "200px"; // truncate description with CSS
+          showMoreBtn.innerText = "Read More";
+        };
+      
+        const showDesc = () => {
+          desc.style.maxHeight = null; // unset height to show full description
+          showMoreBtn.innerText = "Read Less";
+        };
+      
+        hideDesc(); // start with truncated description
+      
+        showMoreBtn.addEventListener("click", () => {
+          if (showMoreBtn.innerText === "Read More") {
+            showDesc();
+          } else {
+            hideDesc();
+          }
+        });
+      }
+      
+      
+                const price = document.createElement("p");
+                price.innerText = `Price: UGX${product.price}`;
+                card.appendChild(price);
+      
+
+                const stars = document.createElement("div");            
+stars.classList.add("stars");
+for (let j = 0; j < 5; j++) {
+  const star = document.createElement("span");
+  star.classList.add("star");
+  star.innerHTML = "&#9733;"; // Unicode character for a star
+  stars.appendChild(star);
+}
+card.appendChild(stars);
+
+
+const deliveryText = document.createElement("div");
+deliveryText.textContent = "Eligible for Free Delivery";
+deliveryText.classList.add("delivery-text");
+card.appendChild(deliveryText);
+
+
+
+      
+      
+      // Open the Modal
+      function openModal(img) {
+        document.getElementById("modalImg").src = img.src;
+        document.querySelector(".modal").style.display = "block";
+      }
+      
+      // Close the Modal
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".modal").style.display = "none";
+      });
+      
+      
+      
+                const messageInput = document.createElement("input");
+      messageInput.type = "text";
+      messageInput.placeholder = `Hi, I'm interested in buying ${product.name}.`;
+      card.appendChild(messageInput);
+      
+      const sendBtn = document.createElement("button");
+      sendBtn.innerText = "Send";
+      sendBtn.addEventListener("click", () => {
+        const message = messageInput.value;
+        console.log(`Sending message "${message}" to seller for product "${product.name}"`);
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${+256759740405}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+      card.appendChild(sendBtn);
+      
+      productsList.appendChild(card);
+      
+      }
+        loaderContainer.style.display = "none"; // hide the loader container
+        
+    });
+   
+
+
+
+     </script>
+
+<script>
+  const slider = document.querySelector('.image-slider');
+const images = slider.querySelectorAll('img');
+const interval = 3000; // Change image every 3 seconds
+
+let index = 0;
+setInterval(() => {
+  images[index].classList.remove('active');
+  index = (index + 1) % images.length;
+  images[index].classList.add('active');
+}, interval);
+
+</script>
+
