@@ -272,7 +272,7 @@ margin-top:20px;
 }
 
 .topbody{
-  background:#ccc;
+  background:#e4e4e4;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 30px;
@@ -294,7 +294,7 @@ margin-top:20px;
   justify-content: center;
   background-color: #002E63;
   padding: 20px;
-  width:60%;
+  width:100%;
   margin-top:20px;
   border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -1339,7 +1339,10 @@ iframe {
     height: 100px;
     width: 100px;
   }
-  
+
+  .products {
+    min-height: 500px; /* set a minimum height */
+  }
 
   #products-list {
     display: grid;
@@ -1773,7 +1776,7 @@ transition: all 0.3s ease-in-out;
 
 .image-slider {
   width: 100%;
-  height: 300px;
+  height: 500px;
   background: #002E63;
   overflow: hidden;
   position: relative;
@@ -1785,16 +1788,19 @@ transition: all 0.3s ease-in-out;
 }
 
 .image-slider img {
-  width: 70%;
+  width: 100%;
   height: 100%;
   position: absolute;
-  border-radius:5px;
   top: 0;
   left: 10;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
+@media screen and (max-width: 768px){
+    .image-slider{
+      height: 200px;
+    }
+  }
 
 
 .image-slider img.active {
@@ -1880,11 +1886,7 @@ transition: all 0.3s ease-in-out;
     color: #008ABF;
   }
   
-  @media screen and (max-width: 768px){
-    .image-slider{
-      height: 200px;
-    }
-  }
+  
 
   .used-badge {
     background-color: #e74c3c;
@@ -2031,41 +2033,136 @@ transition: all 0.3s ease-in-out;
       
 
       .intro {
-        background-image: url("images/g1.jpg");
+        position: relative;
+      }
+      
+      .intro-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/g1.jpg');
         background-size: cover;
-        background-position: center;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        filter: blur(5px);
+        z-index: -1;
       }
       
       .intro-text {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 50px;
-        border-radius: 0 0 10px 10px;
+        position: relative;
         text-align: center;
+        padding: 15px;
+        z-index: -1;
+        color: #fff;
+        overflow: hidden;
       }
       
       .intro-text h1 {
-        font-size: 3rem;
+        font-size: 48px;
+        margin-top: 20px;
         margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+        animation: slideInDown 1s ease-in-out;
       }
       
       .intro-text p {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
+        font-size: 24px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+        animation: slideInUp 1s ease-in-out;
       }
-      @media screen and (max-width: 768px){
+      
+      @keyframes slideInDown {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes slideInUp {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      
+      
+      .gadget-animation {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+      
+      .gadget-1,
+      .gadget-2,
+      .gadget-3 {
+        position: absolute;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border-radius: 20px;
+        transform: translateY(100%);
+        animation: gadget-animation 3s ease-in-out infinite;
+      }
+      
+      .gadget-1 {
+        background-color: #002E63;
+        left: 20%;
+        animation-delay: 0.5s;
+      }
+      
+      .gadget-2 {
+        left: 45%;
+        animation-delay: 1s;
+      }
+      
+      .gadget-3 {
+        background-color: rgb(241, 241, 2);
+        left: 70%;
+        animation-delay: 1.5s;
+      }
+      
+      @keyframes gadget-animation {
+        0% {
+          transform: translateY(100%);
+        }
+        50% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+      
+      @media screen and (max-width: 768px) {
         .intro-text h1 {
-          font-size: 2rem;
+          font-size: 30px;
+        }
+        .intro-text p {
+          font-size: 20px;
           margin-bottom: 20px;
         }
-        
-        .intro-text p {
-          font-size: 1.0rem;
-          margin-bottom: 30px;
+        .gadget-animation {
+          height: 100px;
+        }
+        .gadget-1,
+        .gadget-2,
+        .gadget-3 {
+          width: 50px;
+          height: 50px;
         }
       }
-     
       
