@@ -813,7 +813,7 @@ document.querySelector("#uk-used-link").addEventListener("click", () => {
   // Clear the products list
   document.getElementById("products-list").innerHTML = "";
   // Get products from newPhonesRef
-  get(newPhonesRef).then((snapshot) => {
+  get(ukUsedRef).then((snapshot) => {
     const data = snapshot.val();
     const productsList = document.getElementById("products-list");
     for (let i in data) {
