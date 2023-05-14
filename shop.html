@@ -257,6 +257,12 @@ function searchProducts() {
         badge.classList.add("used-badge2");
         badge.innerText = "Brand New";
         card.appendChild(badge);
+           // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>24 month Guarantee for Brand New Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
+
         // Add product image
         const img = document.createElement("img");
         img.src = product.image;
@@ -337,6 +343,12 @@ function searchProducts() {
         badge.classList.add("used-badge");
         badge.innerText = "UK Used";
         card.appendChild(badge);
+        // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>12 month Guarantee for UK Used Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
+
         // Add product image
         const img = document.createElement("img");
         img.src = product.image;
@@ -743,6 +755,11 @@ document.querySelector("#brand-new-link").addEventListener("click", () => {
       badge.classList.add("used-badge2");
       badge.innerText = "Brand New";
       card.appendChild(badge);
+       // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>24 month Guarantee for Brand New Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
       // Add product image
       const img = document.createElement("img");
       img.src = product.image;
@@ -826,6 +843,11 @@ document.querySelector("#uk-used-link").addEventListener("click", () => {
       badge.classList.add("used-badge");
       badge.innerText = "UK Used";
       card.appendChild(badge);
+       // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>12 month Guarantee for UK Used Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
       // Add product image
       const img = document.createElement("img");
       img.src = product.image;
@@ -909,6 +931,11 @@ document.querySelector("#phones-link").addEventListener("click", () => {
       badge.classList.add("used-badge2");
       badge.innerText = "Brand New";
       card.appendChild(badge);
+       // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>24 month Guarantee for Brand New Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
       // Add product image
       const img = document.createElement("img");
       img.src = product.image;
@@ -982,9 +1009,14 @@ document.querySelector("#phones-link").addEventListener("click", () => {
       card.classList.add("card1");
       // Add "Brand New" badge
       const badge = document.createElement("div");
-      badge.classList.add("used-badge2");
-      badge.innerText = "Brand New";
+      badge.classList.add("used-badge");
+      badge.innerText = "UK Used";
       card.appendChild(badge);
+       // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>12 month Guarantee for UK Used Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
       // Add product image
       const img = document.createElement("img");
       img.src = product.image;
@@ -1406,9 +1438,14 @@ document.querySelector("#tablets-link").addEventListener("click", () => {
                 card.classList.add("card1");
                        // Add "used" badge
   const usedBadge = document.createElement("div");
-  usedBadge.classList.add("used-badge");
+  usedBadge.classList.add("used-badge2");
   usedBadge.innerText = "Brand New";
   card.appendChild(usedBadge);
+   // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>24 month Guarantee for Brand New Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
                    const img = document.createElement("img");
       img.src = product.image;
       img.alt = product.name;
@@ -1520,6 +1557,11 @@ card.appendChild(deliveryText);
   usedBadge.classList.add("used-badge");
   usedBadge.innerText = "UK Used";
   card.appendChild(usedBadge);
+   // Add guarantee text
+const guaranteeText = document.createElement("div");
+guaranteeText.innerHTML = "<i class='fa fa-shield'></i>12 month Guarantee for UK Used Phones";
+guaranteeText.classList.add("guarantee-text");
+card.appendChild(guaranteeText);
       
                    const img = document.createElement("img");
       img.src = product.image;
