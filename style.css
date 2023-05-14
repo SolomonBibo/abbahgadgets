@@ -1364,7 +1364,7 @@ iframe {
   
   
   .card1 {
-    
+    position:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1374,7 +1374,7 @@ iframe {
     padding: 5px;
     border: transparent;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background:#f9f9f9;
     
   }
@@ -1429,8 +1429,7 @@ iframe {
         }
         .card1 {
   
-          
-          margin: 10px;
+          margin: 5px;
           padding: 10px;
         }
     
@@ -1555,13 +1554,21 @@ input[type=text] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: white;
+  color: orange;
+  padding: 12px 20px;
+  border-color: orange;
+  width:90%;
+  font-size: bold;
+  font-weight:bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: orange;
   color: white;
   padding: 12px 20px;
-  border: none;
-  width:90%;
-  border-radius: 4px;
-  cursor: pointer;
+  border-color: rgb(255, 255, 255);
 }
 .loader-container {
   position: fixed;
@@ -1886,29 +1893,44 @@ transition: all 0.3s ease-in-out;
     color: #008ABF;
   }
   
-  
+  .guarantee-text {
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    color: #00abef;
+    margin-top:5px;
+  }
+
+  .guarantee-text i {
+    font-size: 1rem;
+    margin-right: 5px;
+    color: greenyellow;
+  }
+    @media screen and(max-width: 480px){
+    .guarantee-text {
+      font-size: 10px;
+    }
+  }
 
   .used-badge {
     background-color: #e74c3c;
     color: white;
     font-size: 0.7rem;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     position: relative;
   }
 
   .used-badge2 {
     background-color: orange;
-    
+
     color: #fff;
     font-size: 0.7rem;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     position:relative;
   }
  
-  
-
 
   main {
     margin: 0;
